@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/scripts/boostrap-datepicker.min.js"></script>
+<script>
+$('#sandbox-container .input-group.date').datepicker({
+    todayBtn: true,
+    autoclose: true,
+    todayHighlight: true
+});
+</script>
+<title>Parish Records and Reservations</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/business-casual.css" rel="stylesheet">
+<link href="css/bootsrtap-datepicker.css" rel="stylesheet">
+
+
+<!-- Fonts -->
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+	rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div class="brand">
+		<img src="img/ola.jpg" style="align: left; width: 8%; height: 8%;">
+		San Jose de Ampid Parish Church <img src="img/logosjdap.jpg"
+			style="align: right; width: 8%; height: 8%;">
+	</div>
+	<div class="address-bar">Gen. Luna St. Ampid 1 San Mateo | Rizal,
+		PHL 1850 | Tel: 2971109</div>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+				<a class="navbar-brand" href="index.html">San Jose de Ampid
+					Parish</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="history.html">HISTORY</a></li>
+					<li><a href="church.html">CHURCH</a></li>
+					<li><a href="records.html">RECORDS</a></li>
+					<li><a href="reservations.html">RESERVATIONS</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="box">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">
+						<strong>First Communion Certficate Retrieval</strong>
+
+					</h2>
+
+					<hr>
+				</div>
+
+				<div class="col-md-12">
+					<p
+						style="font-size: 20px; font-family: 'trebuchet ms'; text-align: justify;">Please
+						fill out the necessary information for your request:</p>
+					<form class="form-horizontal" id="eventForm" action="success.html">
+						<fieldset>
+							<!-- Form Name -->
+							<legend>First Communion Record Request</legend>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="lastname">Last
+									Name</label>
+								<div class="col-md-4">
+									<input id="lastname" name="lastname"
+										placeholder="Last Name o Apelyido"
+										class="form-control input-md" required="required" type="text">
+									<span class="help-block">e.g.Tuazon</span>
+								</div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="firstname">First
+									Name</label>
+								<div class="col-md-4">
+									<input id="firstname" name="firstname"
+										placeholder="First Name o Pangalan"
+										class="form-control input-md" required="required" type="text">
+									<span class="help-block">e.g. Noelle Christine</span>
+								</div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="middlename">Middle
+									Name</label>
+								<div class="col-md-4">
+									<input id="middlename" name="middlename"
+										placeholder="Middle Name o Gitnang Pangalan"
+										class="form-control input-md" required="required" type="text">
+									<span class="help-block">e.g. Perez</span>
+								</div>
+							</div>
+							
+      <div class="form-group">
+        <label class="col-md-4 control-label">Birth Date</label>
+        <div class="col-xs-5 date">
+            <div class="input-group input-append date" id="datePicker">
+                <input type="text" class="form-control" name="date" />
+                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+        </div>
+    </div>
+        <div class="input-group date">
+      <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+    </div>
+							<!-- Select Basic -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="bap_year">Year
+									of First Communion</label>
+								<div class="col-md-4">
+									<select id="bap_year" name="bap_year" class="form-control">
+										<option value="-">-</option>
+										<option value="1990">1990</option>
+										<option value="1991">1991</option>
+										<option value="1992">1992</option>
+										<option value="1993">1993</option>
+										<option value="1994">1994</option>
+										<option value="1995">1995</option>
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+										<option value="2001">2001</option>
+										<option value="2002">2002</option>
+										<option value="2003">2003</option>
+										<option value="2004">2004</option>
+										<option value="2005">2005</option>
+										<option value="2006">2006</option>
+										<option value="2007">2007</option>
+										<option value="2008">2008</option>
+										<option value="2009">2009</option>
+										<option value="2010">2010</option>
+										<option value="2011">2011</option>
+										<option value="2012">2012</option>
+										<option value="2013">2013</option>
+										<option value="2014">2014</option>
+										<option value="2015">2015</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="quantity">Quantity</label>
+								<div class="col-md-4">
+									<input id="quantity" name="quantity"
+										placeholder="Quantity"
+										class="form-control input-md" required="required" type="number">
+									<span class="help-block">e.g. 5</span>
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="email">Email</label>
+								<div class="col-md-4">
+									<input id="email" name="email" placeholder="xxxxx@example.com"
+										class="form-control input-md" required="required" type="email">
+
+								</div>
+							</div>
+							<!-- Button -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="submit"></label>
+								<div class="col-md-4">
+								<button id="submit" name="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+	<!-- /.container -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p>Copyright &copy; Perez 2015</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
