@@ -160,6 +160,15 @@ $('#sandbox-container .input-group.date').datepicker({
         <div class="input-group date">
       <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
     </div>
+    					<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="email">Email</label>
+								<div class="col-md-4">
+									<input id="email" name="email" placeholder="xxxxx@example.com"
+										class="form-control input-md" required="required" type="email">
+
+								</div>
+							</div>
 							<!-- Select Basic -->
 							<div class="form-group">
 								<label class="col-md-4 control-label" for="bap_year">Year
@@ -205,15 +214,27 @@ $('#sandbox-container .input-group.date').datepicker({
 									<span class="help-block">e.g. 5</span>
 								</div>
 							</div>
-							<!-- Text input-->
+							
+							
 							<div class="form-group">
-								<label class="col-md-4 control-label" for="email">Email</label>
+								<label class="col-md-4 control-label" for="payment">Payment
+									Terms</label>
 								<div class="col-md-4">
-									<input id="email" name="email" placeholder="xxxxx@example.com"
-										class="form-control input-md" required="required" type="email">
-
+									<div class="radio">
+										<label for="payment-0"> <input name="payment"
+											id="payment-0" value="bank" checked="checked" type="radio">
+											Thru bank
+										</label>
+									</div>
+									<div class="radio">
+										<label for="payment-1"> <input name="payment"
+											id="payment-1" value="walk-in" type="radio"> Walk-in
+											Payment
+										</label>
+									</div>
 								</div>
 							</div>
+							<br/>
 							<!-- Button -->
 							<div class="form-group">
 								<label class="col-md-4 control-label" for="submit"></label>
